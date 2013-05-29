@@ -1,0 +1,68 @@
+[timestart] 0
+[size] 1690 984
+[pos] 56 56
+*-23.035000 20660000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] XLinkTb.
+[treeopen] XLinkTb.DUT.
+[treeopen] XLinkTb.DUT.xl2ab.
+@22
+XLinkTb.sim_tx_token_data[7:0]
+@28
+XLinkTb.sim_tx_token_type
+@200
+-
+@22
+XLinkTb.fpga_tx_token_data[7:0]
+@28
+XLinkTb.fpga_tx_token_type
+@200
+-
+@28
+XLinkTb.DUT.clk
+XLinkTb.DUT.rx_0
+XLinkTb.DUT.rx_1
+XLinkTb.DUT.tx_0
+XLinkTb.DUT.tx_1
+@200
+-
+@22
+XLinkTb.DUT.xl2ab.xl_ctl.remote_credit_cnt[7:0]
+XLinkTb.DUT.xl2ab.xl_ctl.credit_cnt[7:0]
+@28
+XLinkTb.DUT.xl2ab.link_has_credits
+XLinkTb.DUT.xl2ab.link_issued_credits
+XLinkTb.DUT.xl2ab.xl_ctl.link_reset
+@200
+-
+@22
+XLinkTb.DUT.addr_bus[30:0]
+XLinkTb.DUT.data_bus_rd[31:0]
+XLinkTb.DUT.data_bus_wr[31:0]
+@28
+XLinkTb.DUT.rd_strobe
+XLinkTb.DUT.wr_strobe
+@200
+-
+@22
+XLinkTb.DUT.xl2ab.xl_d_proc.addr_in[31:0]
+XLinkTb.DUT.xl2ab.xl_d_proc.s[3:0]
+XLinkTb.DUT.xl2ab.xl_d_proc.value[31:0]
+@200
+-
+@22
+XLinkTb.DUT.xl2ab.xl_d_proc.tx_token_out[8:0]
+@28
+XLinkTb.DUT.xl2ab.xl_d_proc.tx_token_taken
+XLinkTb.DUT.xl2ab.xl_d_proc.tx_token_valid
+XLinkTb.DUT.xl2ab.rx_buf_ren
+@29
+XLinkTb.DUT.xl2ab.xl_ctl.link_issue_hello
+@28
+XLinkTb.DUT.xl2ab.xl_ctl.should_send_hello
+XLinkTb.DUT.xl2ab.xl_ctl.should_send_hello_n
+@200
+-
+@28
+XLinkTb.DUT.leds[2:0]
+[pattern_trace] 1
+[pattern_trace] 0

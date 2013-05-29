@@ -1,0 +1,111 @@
+# Constraints file for OpenVizsla CPLD
+
+# CPLD clock line
+#NET "CLK13M" LOC = "P27";
+
+# DIP Switches
+NET "DIPSW<0>" LOC = "P4";
+NET "DIPSW<1>" LOC = "P3";
+NET "DIPSW<2>" LOC = "P1";
+NET "DIPSW<3>" LOC = "P99";
+NET "DIPSW<4>" LOC = "P97";
+NET "DIPSW<5>" LOC = "P95";
+NET "DIPSW<6>" LOC = "P96";
+
+# Buttons
+#NET "BUTTON<0>" LOC = "P18";
+#NET "BUTTON<1>" LOC = "P20";
+#NET "BUTTON<2>" LOC = "P22";
+
+# JTAG
+NET "FTDI_TDI" LOC = "P42";
+NET "FTDI_TDO" LOC = "P86";
+NET "FTDI_TCK" LOC = "P49";
+NET "FTDI_TMS" LOC = "P56";
+NET "FTDI_TRST" LOC = "P58";
+
+NET "FPGA_TDI" LOC = "P9";
+NET "FPGA_TDO" LOC = "P10";
+NET "FPGA_TMS" LOC = "P12";
+NET "FPGA_TCK" LOC = "P11";
+
+NET "XCORE_TDI" LOC = "P71";
+NET "XCORE_TDO" LOC = "P67";
+NET "XCORE_TMS" LOC = "P70";
+NET "XCORE_TCK" LOC = "P68";
+NET "XCORE_TRST" LOC = "P72";
+
+NET "OLD_XCORE_TRST" LOC = "P81";
+
+# Serial
+NET "FTDI_RX" LOC = "P25";
+NET "FTDI_TX" LOC = "P23" | BUFG=DATA_GATE;
+
+NET "XCORE0_RX" LOC = "P64";
+NET "XCORE0_TX" LOC = "P60";
+
+NET "XCORE1_RX" LOC = "P82";
+NET "XCORE1_TX" LOC = "P85";
+
+NET "XSYS_RX" LOC = "P54";
+NET "XSYS_TX" LOC = "P55";
+
+# Reset
+NET "FTDI_RESET" LOC = "P59";
+
+NET "XCORE_RESET" LOC = "P61";
+
+# FPGA control
+NET "FPGA_M<0>" LOC = "P92";
+NET "FPGA_M<1>" LOC = "P93";
+NET "FPGA_M<2>" LOC = "P94";
+
+NET "FPGA_VEN" LOC = "P74";
+
+# XCore control
+NET "XBOOTMODE" LOC = "P91";
+
+# XCore Aux
+#NET "X0_AUX<0>" LOC = "P63";
+#NET "X0_AUX<1>" LOC = "P65";
+
+#NET "X1_AUX<0>" LOC = "P89";
+#NET "X1_AUX<1>" LOC = "P87";
+#NET "X1_AUX<2>" LOC = "P90";
+
+# Current sensor I2C
+#NET "CURRENT_SDA" LOC = "P8";
+#NET "CURRENT_SCL" LOC = "P6";
+
+# SPI (XMOS + Flash)
+#NET "SPI_CLK" LOC = "P76";
+#NET "SPI_CS" LOC = "P79";
+#NET "SPI_MOSI" LOC = "P77";
+#NET "SPI_MISO" LOC = "P78";
+
+# LCD
+#NET "LCD_CLK" LOC = "P16";
+#NET "LCD_CS" LOC = "P13";
+#NET "LCD_DIN" LOC = "P17";
+#NET "LCD_CD" LOC = "P15";
+#NET "LCD_RST" LOC = "P14";
+
+# Pins wired in parallel for increased current sinking ability
+#NET "LCD_LED<0>" LOC = "P35";
+#NET "LCD_LED<1>" LOC = "P36";
+#NET "LCD_LED<2>" LOC = "P37";
+#NET "LCD_LED<3>" LOC = "P39";
+#NET "LCD_LED<4>" LOC = "P40";
+#NET "LCD_LED<5>" LOC = "P41";
+
+#NET "LCD_LED<6>" LOC = "P28";
+#NET "LCD_LED<7>" LOC = "P29";
+#NET "LCD_LED<8>" LOC = "P30";
+#NET "LCD_LED<9>" LOC = "P32";
+#NET "LCD_LED<10>" LOC = "P33";
+
+# Free testpoint pins
+#NET "EXTRA<0>" LOC = "P53";
+#NET "EXTRA<1>" LOC = "P50";
+#NET "EXTRA<2>" LOC = "P66";
+#NET "EXTRA<3>" LOC = "P52";

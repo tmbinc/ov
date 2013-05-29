@@ -1,0 +1,5 @@
+This source based off XMOS created/provided 2W Link implementation.
+
+The link has been ported from a 'G' style link to a 'L' style to support the L02 processor on the OpenVizsla.
+
+A simple read/write system has been created to allow the XMOS to read/write FPGA SFRs

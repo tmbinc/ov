@@ -1,0 +1,29 @@
+This sample data has been captured with an ULPI in high-speed mode connected
+in parallel to an Eye-Fi SD card reader. The data was captured using chipscope,
+thus the sample depth is very limited (32k bytes).
+
+In this case, it's enough for the initial enumeration and the first few
+usbmass commands (INQUIRY at 13399, READ_FORMATTED_CAPACITY at 114564 with
+no response within this trace).
+
+Probably due to a bug in the capture code, two transfers appear to be
+corrupted:
+
+- the DATA0 packet starting at sample 5559 is aborted early
+- the DATA0 packet starting at sample 6735 is aborted early
+
+Further, at the beginning there are a few invalid bytes, probably as part of
+the noise when the USB device was plugged in.
+
+There are no timestamps, only sample counts. This is also a limitation of
+hardware used to capture this data. (This will not be an issue with OV1).
+
+usbmass_enum.txt is the raw data, as received from ULPI, slightly filtered
+(no RXCMDs in the middle of a packet). Bracketed bytes indicate RXCMDs,
+non-bracketed bytes are USB data. Data is annotated with a very simple USB
+packet decoder.
+
+usbmass_enum.pkt is the raw data converted into a format that can be read by
+the Ellisys Visual USB software. Please do not use this software unless you
+own Ellisys hardware! Note that again there are no timestamps, instead the
+sample count is used as the time.

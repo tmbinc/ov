@@ -1,0 +1,21 @@
+root = 'XLinkTb'
+
+test_files = [
+	'XLinkTb.v',
+	'Xlink_testTop.v' ]
+
+design_files = [
+	'src/xlink/XLinkRxPhy.v',
+	'src/xlink/XLinkTxPhy.v',
+	'src/xlink/XTokenFifo.v',
+	'src/xlink/XLinkTxCntrl.v',
+	'src/xlink/XLinkController.v',
+	'src/xlink/XLinkDataProc.v',
+	'src/xlink/XLinkRxPhy2B.v',
+	'src/xlink/XLinkTxPhy2B.v',
+	'src/xlink/SimpleLinkDataProcessor.v',
+	'src/xlink/XLinkToAddrBus.v',
+	'src/led_module.v' ]
+
+
+

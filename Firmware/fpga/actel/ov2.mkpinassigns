@@ -1,0 +1,99 @@
+# Now actual assigns to variables used in PDC generation
+
+#RST_BUS_SETTING ?= -iostd LVTTL -REGISTER No -RES_PULL Up -fixed yes
+#CLK_BUS_SETTING ?= -iostd LVTTL -REGISTER No -RES_PULL None -fixed yes
+
+targetULPI_D0 ?= B35
+targetULPI_D1 ?= B37
+targetULPI_D2 ?= B38
+targetULPI_D3 ?= C35
+targetULPI_D4 ?= B40
+targetULPI_D5 ?= B41
+targetULPI_D6 ?= B43
+targetULPI_D7 ?= C39
+targetULPI_NXT ?= C32
+targetULPI_DIR ?= C29
+targetULPI_STP ?= B32
+targetULPI_CLK ?= C4
+
+#SDRAM_CTRL_BUS_SETTINGS=-iostd LVTTL -REGISTER Yes -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -fixed yes
+#SDRAM_CTRL_BUS_SETTINGS_NO_REG=-iostd LVTTL -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -fixed yes
+#SDRAM_DATA_BUS_SETTINGS=-iostd LVTTL -REGISTER Yes -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -fixed yes
+
+RAM_BA0 ?= A48
+RAM_BA1 ?= C1
+RAM_CAS ?= A44
+RAM_CLK ?= A28
+RAM_CS0 ?= A47
+RAM_DQMH ?= A14
+RAM_DQML ?= A35
+RAM_RAS ?= A45
+RAM_WE ?= A43
+
+RAM_D0 ?= A42
+RAM_D1 ?= A41
+RAM_D2 ?= A40
+RAM_D3 ?= A38
+RAM_D4 ?= A37
+RAM_D5 ?= B34
+RAM_D6 ?= C31
+RAM_D7 ?= A36
+RAM_D8 ?= A16
+RAM_D9 ?= A26
+RAM_D10 ?= A23
+RAM_D11 ?= A21
+RAM_D12 ?= A20
+RAM_D13 ?= A19
+RAM_D14 ?= A18
+RAM_D15 ?= A17
+
+RAM_A0 ?= A1
+RAM_A1 ?= A2
+RAM_A2 ?= A4
+RAM_A3 ?= A5
+RAM_A4 ?= A7
+RAM_A5 ?= A8
+RAM_A6 ?= A9
+RAM_A7 ?= A11
+RAM_A8 ?= A12
+RAM_A9 ?= C11
+RAM_A10 ?= B1
+RAM_A12 ?= A13
+RAM_A11 ?= B12
+
+#GPIO_BUS_SETTINGS=-iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -fixed yes
+#GPIO_BUS_NO_OUT_SETTINGS=-iostd LVTTL -REGISTER No  -fixed yes
+
+F1 ?= C17
+F2 ?= C16
+F3 ?= C15
+F4 ?= B24
+F5 ?= C27
+F6 ?= B27
+F7 ?= C26
+F8 ?= B29
+F9 ?= B30
+F10 ?= A33
+FPGA1 ?= A32
+FINT ?= A29
+
+P0 ?= A31
+P1 ?= A30
+P2 ?= C12
+P3 ?= B13
+P4 ?= B15
+P5 ?= B16
+P6 ?= B18
+P7 ?= B19
+
+XLAout0 ?= B8
+XLAout1 ?= B10
+XLAout2 ?= C9
+XLAout3 ?= C7
+XLAout4 ?= C6
+XLAin0 ?= B7
+XLAin1 ?= C5
+XLAin2 ?= B4
+XLAin3 ?= B2
+XLAin4 ?= C2
+
